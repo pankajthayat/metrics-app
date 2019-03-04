@@ -1,0 +1,30 @@
+.search{
+    padding:2px 30px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, #00ffff 0%, #339966 80%);
+    color: black;
+    font: bold;
+}
+.navspace{
+    padding:0px 25px;
+}
+
+.search .active {
+    outline: none;
+    border: none;
+}
+
+.listText{
+    width:250px;
+    height:35px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.export{
+    padding:2px 30px;
+    border-radius: 25px;
+    background: linear-gradient(to right top, #cfd2d6, #afb7ba, #919c9b, #78827c, #64675d);
+    color: rgba(255,255,255,1);
+    font: bold;
+}

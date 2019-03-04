@@ -1,0 +1,83 @@
+#remove {
+  background-color: crimson;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+};
+
+#add_button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#submit_button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.table {
+    border-collapse: initial;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+#table-hover{
+    margin-bottom: 0px;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+};
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+};
+
+th {
+    background-color: #4CAF50;
+    color: white;
+};
+tr:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+};
+
+.scroll{
+    overflow-y: scroll;
+};
+
+.scrollit{
+    overflow-y: scroll;
+};
+div.scrollmenu {
+  background-color:#f2f2f2;
+  overflow: auto;
+  white-space: nowrap;
+}
+/*.container{
+    padding:20px;
+    white-space:nowrap;
+    overflow-x:auto;
+    padding-left: 0px;
+}*/
+
+.table-padding{
+    padding-left: 0px ! important;
+}

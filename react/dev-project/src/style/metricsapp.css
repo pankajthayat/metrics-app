@@ -1,0 +1,94 @@
+.navbutton{
+    padding:8px 80px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, #003399 0%, #009933 80%);
+    color: rgba(255,255,255,1);
+    font: bold;
+}
+.navspace{
+    padding:0px 25px;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+.goback{
+    padding:1px 20px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, #003399 0%, #009933 80%);
+    color: rgba(255,255,255,1);
+    font: bold
+}
+.listText{
+    width:250px;
+    height:35px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.sidebarspace{
+  padding-top: 3px;
+}
+
+.contentspace{
+    padding-top: 15px;
+}
+
+.bck-img{
+    background-image: linear-gradient(30deg, rgba(10, 8, 8, 0.747) 40%, rgba(81, 190, 223, 0.7)), url('../images/scrum2.jpg');
+    background-attachment: fixed;
+     height: 100%;
+    min-height: 535px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-color{
+    color:white;
+}
+
+.left-margin{
+    margin-left: 90px;
+}
+
+.color{
+    background-color: lightgray;
+    color: black;
+}
+
+.table-head tr{
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head th{
+    background-color:lightseagreen;
+    color: black;
+  
+}
+
+.table-head tbody tr:nth-of-type(odd){
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head tbody{
+    background-color:transparent;
+    color: white;
+    font: bold;
+}
+
+ th.head{
+     color: white! important;
+ }
+
+ .btn-update{
+     background-color: dodgerblue;
+ }
+
+ .border{
+     border:2px;
+ }

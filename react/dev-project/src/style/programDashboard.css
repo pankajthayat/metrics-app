@@ -1,0 +1,69 @@
+.img4 {
+    background-image: linear-gradient(30deg, rgba(10, 8, 8, 0.747) 40%, rgba(81, 190, 223, 0.7)), url('../images/bkg 5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-head tr{
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head th{
+    background-color:lightseagreen;
+    color: black;
+  
+}
+
+input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+.table-head tbody tr:nth-of-type(odd){
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head tbody{
+    background-color:transparent;
+    color: white;
+    font: bold;
+}
+
+ .radio-name{
+     color: white;
+     margin-left: 97px;
+ }
+
+ th.head{
+     color: white! important;
+ }
+

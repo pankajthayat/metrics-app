@@ -1,0 +1,41 @@
+.img-dashboard{
+    background-image: linear-gradient(30deg, rgba(10, 8, 8, 0.747) 40%, rgba(81, 190, 223, 0.7)), url('../images/scrum1.png');
+    background-attachment: fixed;
+     height: 100%;
+    min-height: 535px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-head tr{
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head th{
+    background-color:lightseagreen;
+    color: black;
+  
+}
+
+.table-head tbody tr:nth-of-type(odd){
+    background-color:lightblue;
+    color: black;
+  
+}
+
+.table-head tbody{
+    background-color:transparent;
+    color: white;
+    font: bold;
+}
+
+ th.head{
+     color: white! important;
+ }
+
+ .title{
+     color: white;
+ }

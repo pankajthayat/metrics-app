@@ -1,0 +1,134 @@
+#Creating User table and test user insertion
+----------------------------------------------
+CREATE TABLE USER (
+	USER_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	USER_NAME VARCHAR(50) NOT NULL,
+	PASSWORD VARCHAR(100) NOT NULL,
+	FIRST_NAME VARCHAR(50),
+	LAST_NAME VARCHAR(50),
+	USER_EMAIL VARCHAR(50),
+	CREATE_DATE DATE NOT NULL,
+	UPDATE_DATE DATE,
+	USER_ROLE VARCHAR(50)
+);
+
+
+INSERT INTO USER(USER_NAME, PASSWORD, FIRST_NAME, LAST_NAME, CREATE_DATE) 
+VALUES ('bala', 'bala123', 'BALAMURUGAN', 'KANDHAVEL', SYSDATE());
+
+
+#Creating table to store Project pod details and master data insertion
+-------------------------------------------------------------
+CREATE TABLE PROJECT (
+    PRO_ID INT AUTO_INCREMENT PRIMARY KEY not null,
+    PRO_NAME VARCHAR(20) not null,
+    PRO_POD_ID INT,
+    PRO_POD_NAME VARCHAR(20)
+);
+
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 1, 'RTFA');
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 2, 'Selfcare');
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 3, 'PPR');
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 4, 'Selfcare 2');
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 5, 'eSIM');
+INSERT INTO PROJECT(PRO_NAME, PRO_POD_ID, PRO_POD_NAME) 
+VALUES ('Telstra', 6, 'Smart Help');
+
+
+#Creating table to store Engineering metric type details
+--------------------------------------------------------
+CREATE TABLE ENGINEERING (
+ENG_ID INT AUTO_INCREMENT PRIMARY KEY not null,
+ENG_POD_ID int(11), 
+ENG_POD_NAME varchar(20) ,
+ENG_MONTH varchar(20) ,
+ENG_YEAR varchar(4), 
+ENG_RELEASE int(11) ,
+ENG_ITERATION int(11) ,
+ENG_CODE_QUALITY_CYCLOMETRIC int(11) ,
+ENG_CODE_QUALITY_TECHNICAL int(11) ,
+ENG_UNIT_TEST_COVERAGE float ,
+ENG_TEST_AUTOMATION_PERCENTAGE float ,
+ENG_SECURITY_STANDARDS int(11) ,
+ENG_TEST_CASES_EXECUTED int(11) ,
+ENG_TOTAL_DEFECTS int(11) ,
+ENG_OPEN_DEFECTS int(11) ,
+ENG_COMMENTS varchar(500), 
+CREATE_USER varchar(50) ,
+UPDATE_USER varchar(50) ,
+CREATE_DATE date ,
+UPDATE_DATE date ,
+ENG_CODE_QUALITY_MAINTAINABILITY varchar(10)
+)
+
+
+#Creating table to store agile metric type details
+
+CREATE TABLE AGILE 
+(
+AGILE_ID  INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+AGILE_POD_ID varchar(50) ,
+AGILE_POD_NAME varchar(20) ,
+AGILE_MONTH varchar(20) ,
+AGILE_YEAR varchar(20) ,
+AGILE_ITERATION varchar(20) ,
+AGILE_COGNIZANT_TEAM_SIZE varchar(20) ,
+AGILE_TELSTRA_TEAM_SIZE varchar(20) ,
+AGILE_ITERATION_NUMBER varchar(20) ,
+AGILE_VELOCITY varchar(20) ,
+AGILE_PLANNED_VELOCITY varchar(20) ,
+AGILE_REJECTION_RATE varchar(20) ,
+AGILE_AVERAGE_CYCLE varchar(20) ,
+AGILE_VELOCITY_RATE varchar(20) ,
+AGILE_VELOCITY_PER_WEEK varchar(20) ,
+AGILE_COMMENTS varchar(500) ,
+CREATE_USERNAME varchar(30) ,
+CREATE_DATE date ,
+NUMBER_OF_HOLIDAYS varchar(20) ,
+NUMBER_OF_LEAVES_IN_PERSON_DAYS varchar(20) ,
+COMMITMENT_RELIABILITY varchar(20)
+)
+
+
+#Creating table to store DevOps metric type details
+--------------------------------------------------------
+CREATE TABLE DEVOPS (
+	DOPS_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	DOPS_POD_ID VARCHAR(20),
+	DOPS_POD_NAME VARCHAR(20),
+	DOPS_PROD_DEV_FREQ VARCHAR(20),
+	DOPS_RELEASE_NAME VARCHAR(20),
+    DOPS_RELEASE_DATE VARCHAR(20),
+    DOPS_RELEASE_DESC VARCHAR(20),
+	DOPS_RELEASE_TYPE VARCHAR(20),
+	DOPS_PERCENTAGE_FAILED VARCHAR(20),
+	DOPS_MONTH VARCHAR(20),
+	DOPS_YEAR VARCHAR(4),
+	DOPS_COMMENTS VARCHAR(500),
+	CREATE_USER VARCHAR(50),
+	CREATE_DATE DATE
+);
+
+#Creating table for TEAM_TOOLS
+CREATE TABLE TEAM_TOOLS (POD_ID VARCHAR(10), TEAM varchar(10));
+
+
+
+create table agile
+(
+	id integer not null,
+	year int,
+	month varchar(200),
+	cognizant_team_size int,
+	telstra_team_size int,
+	avg_velocity_per_week int,
+ 	primary key(id)
+);
+     
+insert into agile values(1,2000,'August',22,12,9);
+
